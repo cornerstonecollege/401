@@ -1,0 +1,288 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1CCEDC7B1CEA2EF700C6787B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CCEDC7A1CEA2EF700C6787B /* main.m */; };
+		1CCEDC831CEA2F9400C6787B /* Pokemon.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CCEDC821CEA2F9400C6787B /* Pokemon.m */; };
+		1CCEDC891CEA37FB00C6787B /* PokemonProtocols.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CCEDC881CEA37FB00C6787B /* PokemonProtocols.m */; };
+		1CCEDC8C1CEA4F7F00C6787B /* PokemonGrassBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CCEDC8B1CEA4F7F00C6787B /* PokemonGrassBase.m */; };
+		1CCEDC8F1CEA4F8F00C6787B /* PokemonPoisonBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CCEDC8E1CEA4F8F00C6787B /* PokemonPoisonBase.m */; };
+		1CCEDC921CEA4FA500C6787B /* PokemonGrassPoisonBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CCEDC911CEA4FA500C6787B /* PokemonGrassPoisonBase.m */; };
+		1CCEDC951CEA57F300C6787B /* Bulbasaur.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CCEDC941CEA57F300C6787B /* Bulbasaur.m */; };
+		1CCEDC981CEA58CB00C6787B /* Ekans.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CCEDC971CEA58CB00C6787B /* Ekans.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1CCEDC751CEA2EF700C6787B /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1CCEDC771CEA2EF700C6787B /* PokemonProtocol */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = PokemonProtocol; sourceTree = BUILT_PRODUCTS_DIR; };
+		1CCEDC7A1CEA2EF700C6787B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1CCEDC811CEA2F9400C6787B /* Pokemon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Pokemon.h; sourceTree = "<group>"; };
+		1CCEDC821CEA2F9400C6787B /* Pokemon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Pokemon.m; sourceTree = "<group>"; };
+		1CCEDC871CEA37FB00C6787B /* PokemonProtocols.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PokemonProtocols.h; sourceTree = "<group>"; };
+		1CCEDC881CEA37FB00C6787B /* PokemonProtocols.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PokemonProtocols.m; sourceTree = "<group>"; };
+		1CCEDC8A1CEA4F7F00C6787B /* PokemonGrassBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PokemonGrassBase.h; sourceTree = "<group>"; };
+		1CCEDC8B1CEA4F7F00C6787B /* PokemonGrassBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PokemonGrassBase.m; sourceTree = "<group>"; };
+		1CCEDC8D1CEA4F8F00C6787B /* PokemonPoisonBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PokemonPoisonBase.h; sourceTree = "<group>"; };
+		1CCEDC8E1CEA4F8F00C6787B /* PokemonPoisonBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PokemonPoisonBase.m; sourceTree = "<group>"; };
+		1CCEDC901CEA4FA500C6787B /* PokemonGrassPoisonBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PokemonGrassPoisonBase.h; sourceTree = "<group>"; };
+		1CCEDC911CEA4FA500C6787B /* PokemonGrassPoisonBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PokemonGrassPoisonBase.m; sourceTree = "<group>"; };
+		1CCEDC931CEA57F300C6787B /* Bulbasaur.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bulbasaur.h; sourceTree = "<group>"; };
+		1CCEDC941CEA57F300C6787B /* Bulbasaur.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Bulbasaur.m; sourceTree = "<group>"; };
+		1CCEDC961CEA58CB00C6787B /* Ekans.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ekans.h; sourceTree = "<group>"; };
+		1CCEDC971CEA58CB00C6787B /* Ekans.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Ekans.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1CCEDC741CEA2EF700C6787B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1CCEDC6E1CEA2EF700C6787B = {
+			isa = PBXGroup;
+			children = (
+				1CCEDC791CEA2EF700C6787B /* PokemonProtocol */,
+				1CCEDC781CEA2EF700C6787B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1CCEDC781CEA2EF700C6787B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1CCEDC771CEA2EF700C6787B /* PokemonProtocol */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1CCEDC791CEA2EF700C6787B /* PokemonProtocol */ = {
+			isa = PBXGroup;
+			children = (
+				1CCEDC931CEA57F300C6787B /* Bulbasaur.h */,
+				1CCEDC941CEA57F300C6787B /* Bulbasaur.m */,
+				1CCEDC961CEA58CB00C6787B /* Ekans.h */,
+				1CCEDC971CEA58CB00C6787B /* Ekans.m */,
+				1CCEDC8A1CEA4F7F00C6787B /* PokemonGrassBase.h */,
+				1CCEDC8B1CEA4F7F00C6787B /* PokemonGrassBase.m */,
+				1CCEDC8D1CEA4F8F00C6787B /* PokemonPoisonBase.h */,
+				1CCEDC8E1CEA4F8F00C6787B /* PokemonPoisonBase.m */,
+				1CCEDC901CEA4FA500C6787B /* PokemonGrassPoisonBase.h */,
+				1CCEDC911CEA4FA500C6787B /* PokemonGrassPoisonBase.m */,
+				1CCEDC871CEA37FB00C6787B /* PokemonProtocols.h */,
+				1CCEDC881CEA37FB00C6787B /* PokemonProtocols.m */,
+				1CCEDC811CEA2F9400C6787B /* Pokemon.h */,
+				1CCEDC821CEA2F9400C6787B /* Pokemon.m */,
+				1CCEDC7A1CEA2EF700C6787B /* main.m */,
+			);
+			path = PokemonProtocol;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1CCEDC761CEA2EF700C6787B /* PokemonProtocol */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1CCEDC7E1CEA2EF700C6787B /* Build configuration list for PBXNativeTarget "PokemonProtocol" */;
+			buildPhases = (
+				1CCEDC731CEA2EF700C6787B /* Sources */,
+				1CCEDC741CEA2EF700C6787B /* Frameworks */,
+				1CCEDC751CEA2EF700C6787B /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PokemonProtocol;
+			productName = PokemonProtocol;
+			productReference = 1CCEDC771CEA2EF700C6787B /* PokemonProtocol */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1CCEDC6F1CEA2EF700C6787B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Ideia do Luiz";
+				TargetAttributes = {
+					1CCEDC761CEA2EF700C6787B = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 1CCEDC721CEA2EF700C6787B /* Build configuration list for PBXProject "PokemonProtocol" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 1CCEDC6E1CEA2EF700C6787B;
+			productRefGroup = 1CCEDC781CEA2EF700C6787B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1CCEDC761CEA2EF700C6787B /* PokemonProtocol */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1CCEDC731CEA2EF700C6787B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CCEDC891CEA37FB00C6787B /* PokemonProtocols.m in Sources */,
+				1CCEDC8C1CEA4F7F00C6787B /* PokemonGrassBase.m in Sources */,
+				1CCEDC7B1CEA2EF700C6787B /* main.m in Sources */,
+				1CCEDC921CEA4FA500C6787B /* PokemonGrassPoisonBase.m in Sources */,
+				1CCEDC981CEA58CB00C6787B /* Ekans.m in Sources */,
+				1CCEDC951CEA57F300C6787B /* Bulbasaur.m in Sources */,
+				1CCEDC831CEA2F9400C6787B /* Pokemon.m in Sources */,
+				1CCEDC8F1CEA4F8F00C6787B /* PokemonPoisonBase.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1CCEDC7C1CEA2EF700C6787B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		1CCEDC7D1CEA2EF700C6787B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		1CCEDC7F1CEA2EF700C6787B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		1CCEDC801CEA2EF700C6787B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1CCEDC721CEA2EF700C6787B /* Build configuration list for PBXProject "PokemonProtocol" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1CCEDC7C1CEA2EF700C6787B /* Debug */,
+				1CCEDC7D1CEA2EF700C6787B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1CCEDC7E1CEA2EF700C6787B /* Build configuration list for PBXNativeTarget "PokemonProtocol" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1CCEDC7F1CEA2EF700C6787B /* Debug */,
+				1CCEDC801CEA2EF700C6787B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1CCEDC6F1CEA2EF700C6787B /* Project object */;
+}
