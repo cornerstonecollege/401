@@ -21,7 +21,7 @@
 
 @interface GameScene : NSObject
 
-@property(nonatomic, weak) id<GameSceneDelegate> delegate;
+@property(nonatomic, copy) NSArray<id<GameSceneDelegate>> *arrDelegate;
 
 -(void) gameStart;
 -(void) gameUpdate;
