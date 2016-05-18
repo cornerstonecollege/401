@@ -7,15 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1C3DE1081CEB87B20014D6C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C3DE1071CEB87B20014D6C7 /* main.m */; };
-		1C3DE1101CEB87F70014D6C7 /* GameScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C3DE10F1CEB87F70014D6C7 /* GameScene.m */; };
-		1C3DE1131CEB93F40014D6C7 /* HandleMonsters.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C3DE1121CEB93F40014D6C7 /* HandleMonsters.m */; };
-		1C3DE1161CEB97950014D6C7 /* HandleTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C3DE1151CEB97950014D6C7 /* HandleTimer.m */; };
-		1C62999D1CECCFC0003ACE95 /* HandleItems.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C62999C1CECCFC0003ACE95 /* HandleItems.m */; };
+		1C6299AB1CECDCB2003ACE95 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C6299AA1CECDCB2003ACE95 /* main.m */; };
+		1C6299B31CECE40E003ACE95 /* Block.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C6299B21CECE40E003ACE95 /* Block.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		1C3DE1021CEB87B10014D6C7 /* CopyFiles */ = {
+		1C6299A51CECDCB2003ACE95 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -27,20 +24,14 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		1C3DE1041CEB87B10014D6C7 /* GameExample */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = GameExample; sourceTree = BUILT_PRODUCTS_DIR; };
-		1C3DE1071CEB87B20014D6C7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		1C3DE10E1CEB87F70014D6C7 /* GameScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameScene.h; sourceTree = "<group>"; };
-		1C3DE10F1CEB87F70014D6C7 /* GameScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameScene.m; sourceTree = "<group>"; };
-		1C3DE1111CEB93F40014D6C7 /* HandleMonsters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HandleMonsters.h; sourceTree = "<group>"; };
-		1C3DE1121CEB93F40014D6C7 /* HandleMonsters.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HandleMonsters.m; sourceTree = "<group>"; };
-		1C3DE1141CEB97950014D6C7 /* HandleTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HandleTimer.h; sourceTree = "<group>"; };
-		1C3DE1151CEB97950014D6C7 /* HandleTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HandleTimer.m; sourceTree = "<group>"; };
-		1C62999B1CECCFC0003ACE95 /* HandleItems.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HandleItems.h; sourceTree = "<group>"; };
-		1C62999C1CECCFC0003ACE95 /* HandleItems.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HandleItems.m; sourceTree = "<group>"; };
+		1C6299A71CECDCB2003ACE95 /* UsingBlocks */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = UsingBlocks; sourceTree = BUILT_PRODUCTS_DIR; };
+		1C6299AA1CECDCB2003ACE95 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1C6299B11CECE40E003ACE95 /* Block.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Block.h; sourceTree = "<group>"; };
+		1C6299B21CECE40E003ACE95 /* Block.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Block.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		1C3DE1011CEB87B10014D6C7 /* Frameworks */ = {
+		1C6299A41CECDCB2003ACE95 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -50,107 +41,97 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1C3DE0FB1CEB87B10014D6C7 = {
+		1C62999E1CECDCB2003ACE95 = {
 			isa = PBXGroup;
 			children = (
-				1C3DE1061CEB87B10014D6C7 /* GameExample */,
+				1C6299A91CECDCB2003ACE95 /* UsingBlocks */,
+				1C6299A81CECDCB2003ACE95 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		1C3DE1051CEB87B10014D6C7 /* Products */ = {
+		1C6299A81CECDCB2003ACE95 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1C3DE1041CEB87B10014D6C7 /* GameExample */,
+				1C6299A71CECDCB2003ACE95 /* UsingBlocks */,
 			);
 			name = Products;
-			path = ..;
 			sourceTree = "<group>";
 		};
-		1C3DE1061CEB87B10014D6C7 /* GameExample */ = {
+		1C6299A91CECDCB2003ACE95 /* UsingBlocks */ = {
 			isa = PBXGroup;
 			children = (
-				1C3DE1071CEB87B20014D6C7 /* main.m */,
-				1C3DE10E1CEB87F70014D6C7 /* GameScene.h */,
-				1C3DE10F1CEB87F70014D6C7 /* GameScene.m */,
-				1C3DE1111CEB93F40014D6C7 /* HandleMonsters.h */,
-				1C3DE1121CEB93F40014D6C7 /* HandleMonsters.m */,
-				1C3DE1141CEB97950014D6C7 /* HandleTimer.h */,
-				1C3DE1151CEB97950014D6C7 /* HandleTimer.m */,
-				1C62999B1CECCFC0003ACE95 /* HandleItems.h */,
-				1C62999C1CECCFC0003ACE95 /* HandleItems.m */,
-				1C3DE1051CEB87B10014D6C7 /* Products */,
+				1C6299AA1CECDCB2003ACE95 /* main.m */,
+				1C6299B11CECE40E003ACE95 /* Block.h */,
+				1C6299B21CECE40E003ACE95 /* Block.m */,
 			);
-			path = GameExample;
+			path = UsingBlocks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		1C3DE1031CEB87B10014D6C7 /* GameExample */ = {
+		1C6299A61CECDCB2003ACE95 /* UsingBlocks */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1C3DE10B1CEB87B20014D6C7 /* Build configuration list for PBXNativeTarget "GameExample" */;
+			buildConfigurationList = 1C6299AE1CECDCB2003ACE95 /* Build configuration list for PBXNativeTarget "UsingBlocks" */;
 			buildPhases = (
-				1C3DE1001CEB87B10014D6C7 /* Sources */,
-				1C3DE1011CEB87B10014D6C7 /* Frameworks */,
-				1C3DE1021CEB87B10014D6C7 /* CopyFiles */,
+				1C6299A31CECDCB2003ACE95 /* Sources */,
+				1C6299A41CECDCB2003ACE95 /* Frameworks */,
+				1C6299A51CECDCB2003ACE95 /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = GameExample;
-			productName = GameExample;
-			productReference = 1C3DE1041CEB87B10014D6C7 /* GameExample */;
+			name = UsingBlocks;
+			productName = UsingBlocks;
+			productReference = 1C6299A71CECDCB2003ACE95 /* UsingBlocks */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		1C3DE0FC1CEB87B10014D6C7 /* Project object */ = {
+		1C62999F1CECDCB2003ACE95 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = "Ideia do Luiz";
 				TargetAttributes = {
-					1C3DE1031CEB87B10014D6C7 = {
+					1C6299A61CECDCB2003ACE95 = {
 						CreatedOnToolsVersion = 7.3.1;
 					};
 				};
 			};
-			buildConfigurationList = 1C3DE0FF1CEB87B10014D6C7 /* Build configuration list for PBXProject "GameExample" */;
+			buildConfigurationList = 1C6299A21CECDCB2003ACE95 /* Build configuration list for PBXProject "UsingBlocks" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = 1C3DE0FB1CEB87B10014D6C7;
-			productRefGroup = 1C3DE1051CEB87B10014D6C7 /* Products */;
+			mainGroup = 1C62999E1CECDCB2003ACE95;
+			productRefGroup = 1C6299A81CECDCB2003ACE95 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				1C3DE1031CEB87B10014D6C7 /* GameExample */,
+				1C6299A61CECDCB2003ACE95 /* UsingBlocks */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		1C3DE1001CEB87B10014D6C7 /* Sources */ = {
+		1C6299A31CECDCB2003ACE95 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1C3DE1101CEB87F70014D6C7 /* GameScene.m in Sources */,
-				1C3DE1161CEB97950014D6C7 /* HandleTimer.m in Sources */,
-				1C3DE1131CEB93F40014D6C7 /* HandleMonsters.m in Sources */,
-				1C3DE1081CEB87B20014D6C7 /* main.m in Sources */,
-				1C62999D1CECCFC0003ACE95 /* HandleItems.m in Sources */,
+				1C6299AB1CECDCB2003ACE95 /* main.m in Sources */,
+				1C6299B31CECE40E003ACE95 /* Block.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		1C3DE1091CEB87B20014D6C7 /* Debug */ = {
+		1C6299AC1CECDCB2003ACE95 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -194,7 +175,7 @@
 			};
 			name = Debug;
 		};
-		1C3DE10A1CEB87B20014D6C7 /* Release */ = {
+		1C6299AD1CECDCB2003ACE95 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -231,14 +212,14 @@
 			};
 			name = Release;
 		};
-		1C3DE10C1CEB87B20014D6C7 /* Debug */ = {
+		1C6299AF1CECDCB2003ACE95 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
-		1C3DE10D1CEB87B20014D6C7 /* Release */ = {
+		1C6299B01CECDCB2003ACE95 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -248,25 +229,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1C3DE0FF1CEB87B10014D6C7 /* Build configuration list for PBXProject "GameExample" */ = {
+		1C6299A21CECDCB2003ACE95 /* Build configuration list for PBXProject "UsingBlocks" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1C3DE1091CEB87B20014D6C7 /* Debug */,
-				1C3DE10A1CEB87B20014D6C7 /* Release */,
+				1C6299AC1CECDCB2003ACE95 /* Debug */,
+				1C6299AD1CECDCB2003ACE95 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1C3DE10B1CEB87B20014D6C7 /* Build configuration list for PBXNativeTarget "GameExample" */ = {
+		1C6299AE1CECDCB2003ACE95 /* Build configuration list for PBXNativeTarget "UsingBlocks" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1C3DE10C1CEB87B20014D6C7 /* Debug */,
-				1C3DE10D1CEB87B20014D6C7 /* Release */,
+				1C6299AF1CECDCB2003ACE95 /* Debug */,
+				1C6299B01CECDCB2003ACE95 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 1C3DE0FC1CEB87B10014D6C7 /* Project object */;
+	rootObject = 1C62999F1CECDCB2003ACE95 /* Project object */;
 }
