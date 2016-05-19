@@ -9,22 +9,29 @@
 #import <Foundation/Foundation.h>
 #import "GameScene.h"
 #import "HandleMonser.h"
+#import "HandleItem.h"
 #import "HandleTimer.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         
         HandleMonser *handleMonsters = [HandleMonser new];
+        HandleItem *handleItem = [HandleItem new];
         GameScene *game = [GameScene new];
-        game.delegate = handleMonsters;
-        [game gameStart];
-        [game gameStop];
+        
+        
+        __weak HandleItem *weakHandleItem = handleItem;
+        __weak HandleMonser *weakHandleMonsters = handleMonsters;
+        
+        game.arrDelegate = @[weakHandleMonsters,weakHandleItem];
+        //[game gameStart];
+        //[game gameStop];
 
         
-       /* HandleTimer *handleTimer = [[HandleTimer alloc] initWithGameScene: game];
+       HandleTimer *handleTimer = [[HandleTimer alloc] initWithGameScene: game];
         __unused NSTimer *timer= [NSTimer scheduledTimerWithTimeInterval:1.0 target:handleTimer selector:@selector(updateTimer:) userInfo:(nil) repeats:(YES)];
         
-        [[NSRunLoop currentRunLoop] run];*/
+        [[NSRunLoop currentRunLoop] run];
     
     
     }
