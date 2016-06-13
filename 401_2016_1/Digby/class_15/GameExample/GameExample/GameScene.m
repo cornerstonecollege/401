@@ -14,17 +14,24 @@
 {
     NSLog(@"===============Game did start!===================");
     
-    if (self.delegate)
+    if (self.arrDelegate && [self.arrDelegate count] > 0)
     {
-        [self.delegate gameDidStart];
+        for (id<GameSceneDelegate> delegate in self.arrDelegate)
+        {
+            [delegate gameDidStart];
+        }
     }
 }
 
 -(void)gameUpdate
 {
-    if (self.delegate)
+    if (self.arrDelegate && [self.arrDelegate count] > 0)
     {
-        [self.delegate gameDidUpdate];
+        
+        for (id<GameSceneDelegate> delegate in self.arrDelegate)
+        {
+            [delegate gameDidUpdate];
+        }
     }
 }
 
@@ -34,9 +41,12 @@
 {
      NSLog(@"===============Game did End!===================");
     
-    if (self.delegate && [self.delegate respondsToSelector:@selector(gameDidEnd)])
+    for (id<GameSceneDelegate> delegate in self.arrDelegate)
     {
-        [self.delegate gameDidEnd];
+        if ([delegate respondsToSelector:@selector(gameDidEnd)])
+        {
+            [delegate gameDidEnd];
+        }
     }
 }
 

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F4355311CECCFC0008C869F /* HandleItems.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F4355301CECCFC0008C869F /* HandleItems.m */; settings = {ASSET_TAGS = (); }; };
 		3F7F78671CEB87DA00FCA80B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F7F78661CEB87DA00FCA80B /* main.m */; };
 		3F7F786F1CEB87FE00FCA80B /* GameScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F7F786E1CEB87FE00FCA80B /* GameScene.m */; settings = {ASSET_TAGS = (); }; };
 		3F7F78721CEB941000FCA80B /* HandleMonster.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F7F78711CEB941000FCA80B /* HandleMonster.m */; settings = {ASSET_TAGS = (); }; };
@@ -26,6 +27,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		3F43552F1CECCFC0008C869F /* HandleItems.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HandleItems.h; sourceTree = "<group>"; };
+		3F4355301CECCFC0008C869F /* HandleItems.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HandleItems.m; sourceTree = "<group>"; };
 		3F7F78631CEB87DA00FCA80B /* GameExample */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = GameExample; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F7F78661CEB87DA00FCA80B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		3F7F786D1CEB87FE00FCA80B /* GameScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameScene.h; sourceTree = "<group>"; };
@@ -73,6 +76,8 @@
 				3F7F78711CEB941000FCA80B /* HandleMonster.m */,
 				3F7F78731CEB97C800FCA80B /* HandleTimer.h */,
 				3F7F78741CEB97C800FCA80B /* HandleTimer.m */,
+				3F43552F1CECCFC0008C869F /* HandleItems.h */,
+				3F4355301CECCFC0008C869F /* HandleItems.m */,
 			);
 			path = GameExample;
 			sourceTree = "<group>";
@@ -137,6 +142,7 @@
 				3F7F78751CEB97C800FCA80B /* HandleTimer.m in Sources */,
 				3F7F78721CEB941000FCA80B /* HandleMonster.m in Sources */,
 				3F7F78671CEB87DA00FCA80B /* main.m in Sources */,
+				3F4355311CECCFC0008C869F /* HandleItems.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,6 +259,7 @@
 				3F7F786C1CEB87DA00FCA80B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
