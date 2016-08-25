@@ -4,9 +4,7 @@ int main()
 {
 	int number;
 	printf("Write a number:\n");
-	scanf("%i", &number+
-		);
-
+	scanf("%i", &number);
 	char letter = 'A';
 	printf("%c\n", letter);
 
