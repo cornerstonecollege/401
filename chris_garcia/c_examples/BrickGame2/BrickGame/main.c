@@ -9,6 +9,10 @@
 #include <unistd.h>
 #include <string.h>
 #include <stdbool.h>
+#include <stdlib.h>
+#include <time.h>
+
+#define N_BARS 60
 
 
 void init();
@@ -68,68 +72,27 @@ void run()
     int directionX = 1;
     int directionY = 1;
     
-    Bar arrayBars[20];
-    arrayBars[0].x = 3;
-    arrayBars[0].y = 2;
-    arrayBars[0].isVisible = true;
-    arrayBars[1].x = 7;
-    arrayBars[1].y = 2;
-    arrayBars[1].isVisible = true;
-    arrayBars[2].x = 11;
-    arrayBars[2].y = 2;
-    arrayBars[2].isVisible = true;
-    arrayBars[3].x = 15;
-    arrayBars[3].y = 2;
-    arrayBars[3].isVisible = true;
-    arrayBars[4].x = 19;
-    arrayBars[4].y = 2;
-    arrayBars[4].isVisible = true;
-    arrayBars[5].x = 23;
-    arrayBars[5].y = 2;
-    arrayBars[5].isVisible = true;
-    arrayBars[6].x = 27;
-    arrayBars[6].y = 2;
-    arrayBars[6].isVisible = true;
-    arrayBars[7].x = 31;
-    arrayBars[7].y = 2;
-    arrayBars[7].isVisible = true;
-    arrayBars[8].x = 35;
-    arrayBars[8].y = 2;
-    arrayBars[8].isVisible = true;
-    arrayBars[9].x = 39;
-    arrayBars[9].y = 2;
-    arrayBars[9].isVisible = true;
-    arrayBars[10].x = 43;
-    arrayBars[10].y = 2;
-    arrayBars[10].isVisible = true;
-    arrayBars[11].x = 48;
-    arrayBars[11].y = 2;
-    arrayBars[11].isVisible = true;
-    arrayBars[12].x = 52;
-    arrayBars[12].y = 2;
-    arrayBars[12].isVisible = true;
-    arrayBars[13].x = 56;
-    arrayBars[13].y = 2;
-    arrayBars[13].isVisible = true;
-    arrayBars[14].x = 60;
-    arrayBars[14].y = 2;
-    arrayBars[14].isVisible = true;
-    arrayBars[15].x = 64;
-    arrayBars[15].y = 2;
-    arrayBars[15].isVisible = true;
-    arrayBars[16].x = 68;
-    arrayBars[16].y = 2;
-    arrayBars[16].isVisible = true;
-    arrayBars[17].x = 72;
-    arrayBars[17].y = 2;
-    arrayBars[17].isVisible = true;
-    arrayBars[18].x = 76;
-    arrayBars[18].y = 2;
-    arrayBars[18].isVisible = true;
-    arrayBars[19].x = 80;
-    arrayBars[19].y = 2;
-    arrayBars[19].isVisible = true;
+    Bar arrayBars[N_BARS];
     
+    int barY = 2;
+
+  
+    for (int row = 0; row < 3; row++)
+    {
+        int barX = 3;
+        
+        for (int col = 0; col < 20; col++)
+        {
+            int newI = (row * 20) + col;
+            arrayBars[newI].x = barX;
+            arrayBars[newI].y = barY;
+            arrayBars[newI].isVisible = true;
+            
+            barX += 4;
+        }
+        
+        barY += 2;
+    }
     
     getmaxyx(stdscr, max_y, max_x);
 
@@ -166,6 +129,12 @@ void run()
             && ball_x + directionX <= platform_x + strlen(desigPlataform)
             && ball_y + directionY == platform_y) {
             directionY *= -1;
+            time_t t;
+            srand((unsigned) time(&t));
+            int rX = rand() % 2;
+            if (rX) {
+                directionX *= -1;
+            }
         }
         else if (ball_y + directionY < 0)
         {
@@ -181,13 +150,20 @@ void run()
             break;
         }
         
-        for (int i = 0; i < 20; i++) {
+        for (int i = 0; i < N_BARS; i++) {
             if (arrayBars[i].isVisible) {
                 if (ball_x + directionX >= arrayBars[i].x
                     && ball_x + directionX <= arrayBars[i].x + strlen(designBar)
                     && ball_y + directionY == arrayBars[i].y) {
                     arrayBars[i].isVisible = false;
-                    directionX *= -1;
+                    
+                    time_t t;
+                    srand((unsigned) time(&t));
+                    int rX = rand() % 2;
+                    if (rX) {
+                        directionX *= -1;
+                    }
+                    
                     directionY *= -1;
                 }
             }
@@ -200,7 +176,7 @@ void run()
         clear();
         mvprintw(ball_y, ball_x, "o");
         mvprintw(platform_y, platform_x, desigPlataform);
-        for (int i = 0; i < 20; i++) {
+        for (int i = 0; i < N_BARS; i++) {
             if (arrayBars[i].isVisible) {
                 mvprintw(arrayBars[i].y, arrayBars[i].x, designBar);
             }
