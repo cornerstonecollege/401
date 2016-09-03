@@ -68,10 +68,9 @@ void runBar()
     
     char *designPlatform = "|TTTTTTTTT|";
     char *designPlatform2 = "|ZZZZZZZZZ|";
-    
+    srand((unsigned int)time(NULL));
     // new variable that recognizes the key that the player is pressing for controlers
     int control;
-    
     bool isGameOver = false;
     // the while loop that controls the keys and movement of the bar
     while (true)
@@ -101,23 +100,34 @@ void runBar()
         if (ballX + directionBallX >= platformX
             && ballX + directionBallX <= platformX + strlen(designPlatform)
             && ballY + directionBallY == platformY) {
+<<<<<<< HEAD
+=======
+            
+            int rX = rand() % 2;
+            if(rX == 0)
+            {
+                directionBallX *= -1;
+            }
+>>>>>>> bcf8399b97e492d8155a800d19fdba85634dba50
             directionBallY *= -1;
+        
             //conditionals for the limits of the screen.
         }else if (ballX + directionBallX >= platformX2
              && ballX + directionBallX <= platformX2 + strlen(designPlatform2)
              && ballY + directionBallY == platformY2) {
+<<<<<<< HEAD
+=======
+            int rX = rand() % 2;
+            if(rX == 0)
+            {
+                directionBallX *= -1;
+            }
+
+            
+>>>>>>> bcf8399b97e492d8155a800d19fdba85634dba50
             directionBallY *= -1;
             
-            // this random didnt work, try to locate it on the if that controls only the platforms.
-            //time_t t;
-            //srand((unsigned) time(&t));
-            //int rX = rand() % 2;
-            //if(rX)
-            //{
-            //    directionBallX *= -1;
-            //}
-            //directionBallX *= -1;
-            //conditionals for the limits of the screen.
+                //conditionals for the limits of the screen.
         }
         //walls
         else if (ballX + directionBallX >= max_x || ballX + directionBallX <= 0)
