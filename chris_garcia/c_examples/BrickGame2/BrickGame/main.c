@@ -160,7 +160,7 @@ void run()
                     time_t t;
                     srand((unsigned) time(&t));
                     int rX = rand() % 2;
-                    if (rX) {
+                    if (rX == 0) {
                         directionX *= -1;
                     }
                     

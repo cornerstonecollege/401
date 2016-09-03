@@ -98,14 +98,14 @@ void runBar()
         
         //if to program the bouncing of the ball in the platform
         //is only one if that contains the conditionals for the ball in X and in Y.
-        if (ballX >= platformX
-            && ballX <= platformX + strlen(designPlatform)
-            && ballY == platformY) {
+        if (ballX + directionBallX >= platformX
+            && ballX + directionBallX <= platformX + strlen(designPlatform)
+            && ballY + directionBallY == platformY) {
             directionBallY *= -1;
             //conditionals for the limits of the screen.
-        }else if (ballX >= platformX2
-             && ballX <= platformX2 + strlen(designPlatform2)
-             && ballY == platformY2) {
+        }else if (ballX + directionBallX >= platformX2
+             && ballX + directionBallX <= platformX2 + strlen(designPlatform2)
+             && ballY + directionBallY == platformY2) {
             directionBallY *= -1;
             
             // this random didnt work, try to locate it on the if that controls only the platforms.
