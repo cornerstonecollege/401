@@ -103,6 +103,7 @@ void run()
     char *desigPlataform = "xxxx";
     char *designBar = "===";
     
+    int counter = 0;
     int c;
     while(true)
     {
@@ -163,7 +164,7 @@ void run()
                     if (rX == 0) {
                         directionX *= -1;
                     }
-                    
+                    counter ++;
                     directionY *= -1;
                 }
             }
@@ -186,10 +187,21 @@ void run()
     
     clear();
     if (isGameOver) {
-        mvprintw(max_y / 2, max_x / 2, "Game Over");
+        mvprintw(max_y / 2, max_x / 2 -8, "Game Over");
+        mvprintw(max_y / 2 +1 , max_x / 2 -8 , "Score: %i", counter);
         refresh();
         timeout(-1);
         wgetch(stdscr);
+    }
+    else if (counter == 60)
+    {
+        mvprintw(max_y / 2, max_x / 2 -8, "Game Over");
+        mvprintw(max_y / 2 + 3, max_x / 2 -8, "You Win!");
+        mvprintw(max_y / 2 +2 , max_x / 2 -8 , "Score: %i", counter);
+        refresh();
+        timeout(-1);
+        wgetch(stdscr);
+        
     }
 }
 
