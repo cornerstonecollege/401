@@ -14,7 +14,7 @@
 // For protocol
 - (void) siganl
 {
-    [self.computer performClick];
+    [self.computer performType];
 }
 
 @end
