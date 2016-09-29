@@ -45,7 +45,7 @@ class Vehicle {
     func moveWithBlock(passBlock: () -> Void)
     {
         print("Void Block is passed.")
-        passBlock();
+        passBlock()
     }
 }
 
