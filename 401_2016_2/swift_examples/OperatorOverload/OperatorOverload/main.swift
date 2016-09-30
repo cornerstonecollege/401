@@ -101,3 +101,21 @@ print("3 factorial is \(threeFactorial)")
 var 🐶 = 1
 print(🐶)
 
+
+infix operator ∞: MultiplicationPrecedence
+func ∞(l:Int, r:Int) -> Int {
+    return Int.max
+}
+
+infix operator -∞: MultiplicationPrecedence
+func -∞(l:Int, r:Int) -> Int {
+    return Int.min
+}
+
+var positiveInfinite = 2 ∞ (4 * 3)
+var negativeInfinite = 2 -∞ (5 * 2)
+
+print("Positive infinite: \(positiveInfinite)")
+print("Negative infinite: \(negativeInfinite)")
+
+
