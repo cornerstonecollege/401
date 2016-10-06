@@ -119,3 +119,8 @@ print("Positive infinite: \(positiveInfinite)")
 print("Negative infinite: \(negativeInfinite)")
 
 
+while let n = readLine(), let j = String("kk"), j.lowercased() == n
+{
+    print("and 3")
+}
+
